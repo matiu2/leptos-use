@@ -122,7 +122,6 @@ use std::rc::Rc;
 ///     "auth",
 ///     UseCookieOptions::default()
 ///         .ssr_cookies_header_getter(|| {
-///             #[cfg(feature = "ssr")]
 ///             {
 ///                 Some("Somehow get the value of the cookie header as a string".to_owned())
 ///             }
